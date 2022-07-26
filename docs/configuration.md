@@ -26,4 +26,3 @@ Just the Docs has some specific configuration parameters that can be defined in 
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/assets/images/just-the-docs.png"
 ```
-

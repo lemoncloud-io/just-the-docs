@@ -18,55 +18,35 @@ permalink: /
 
 ## 시작하기
 
-### Dependencies
+이 문서를 수정하기 위한 설정 및 기본 사항
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+### Local installation: Use VSCode
 
-### Quick start: Use as a GitHub Pages remote theme
+1. _처음설정:_ VSCode 의 확장 플러그인 `Remote Development` 설치하고, 재시작하기.
+    - 그러면, `Dev Container: Just the docs` 가 실행할거냐 물어보고, 시작해줌
+    {: .fs-2}
+    - 그러면, `Terminal` 창에 도커기반 컨테이너 실행하고, 커맨드 실행할 수 있는 터미널 보임.
+    {: .fs-2}
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-
-```yaml
-remote_theme: just-the-docs/just-the-docs
-```
-
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
-
-### Local installation: Use the gem-based theme
-
-1. Install the Ruby Gem
-  ```bash
-  $ gem install just-the-docs
-  ```
+2. `_config.yml` 수정하기 (여러가지 설정들 변경)
   ```yaml
-  # .. or add it to your your Jekyll site’s Gemfile
-  gem "just-the-docs"
+  title: 어떤 타이틀
   ```
 
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-  ```yaml
-  theme: "just-the-docs"
-  ```
-
-3. _Optional:_ Initialize search data (creates `search-data.json`)
+3. _Optional:_ 검색데이터 초기화 (creates `search-data.json`)
   ```bash
   $ bundle exec just-the-docs rake search:init
   ```
 
-3. Run you local Jekyll server
+3. `Jekyll server` 실행하기
   ```bash
   $ jekyll serve
   ```
-  ```bash
-  # .. or if you're using a Gemfile (bundler)
-  $ bundle exec jekyll serve
-  ```
 
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
+4. 브라우저에서 열기 [http://localhost:4000](http://localhost:4000)
 
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-### Configure Just the Docs
+### 설정하기 (Configure)
 
 - [See configuration options]({% link docs/configuration.md %})
 

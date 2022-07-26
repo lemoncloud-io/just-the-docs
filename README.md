@@ -4,6 +4,7 @@
 <br><br>
 <p align="center">
     <h1 align="center">Just the Docs</h1>
+    <h2 align="center">주의! <strong>lemon 템플릿용</strong>으로 수정됨</h2>
     <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
     <p align="center"><strong><a href="https://just-the-docs.github.io/just-the-docs/">See it in action!</a></strong></p>
     <br><br><br>
